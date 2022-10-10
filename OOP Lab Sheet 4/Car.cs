@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOP_Lab_Sheet_4
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-    class Car
+    
+    public class Car
     {
         private string carMake;
 
