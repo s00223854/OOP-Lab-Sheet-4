@@ -22,8 +22,19 @@ namespace OOP_Lab_Sheet_4
             c2.CurrentSpeed = 0;
             c2.EngineSize = 1.2;
 
-            Console.WriteLine($"the {c1.CarMake} {c1.CarModel} engine size {c1.EngineSize} is currently at {c1.CurrentSpeed} Km/h");
-            Console.WriteLine($"the {c2.CarMake} {c2.CarModel} engine size {c2.EngineSize} is currently at {c2.CurrentSpeed} km/h" );
+            c1.DisplayInfo();
+
+            Console.WriteLine(c2);
+
+            for (int i = 0; i < 10; i++)
+            {
+                c1.Accelerate();
+            }
+
+            Console.WriteLine(c1);
+            //Ex1
+            //Console.WriteLine($"the {c1.CarMake} {c1.CarModel} engine size {c1.EngineSize} is currently at {c1.CurrentSpeed} Km/h");
+            //Console.WriteLine($"the {c2.CarMake} {c2.CarModel} engine size {c2.EngineSize} is currently at {c2.CurrentSpeed} km/h" );
         }
     }
 }

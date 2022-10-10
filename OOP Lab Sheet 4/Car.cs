@@ -41,7 +41,27 @@ namespace OOP_Lab_Sheet_4
             set { this.engineSize = value; }
         }
 
-        static void DisplayInfo()
-        { }
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Car make: {carMake}");
+            Console.WriteLine($"Car Model: {carModel}");
+            Console.WriteLine($"Current Speed: {currentSpeed}");
+            Console.WriteLine($"Engine Size: {EngineSize}");
+        }
+
+        public override string ToString()
+        {
+            return
+                string.Format($"Car Make: {CarMake}" +
+                                $"\nCar Model: {CarModel}" +
+                                $"\nCurrent Speed: {CurrentSpeed}") +
+                                $"\nEngine size: {EngineSize}";
+        }
+
+        public void Accelerate()
+        {
+            CurrentSpeed += 10;
+            Console.WriteLine($"current speed is {CurrentSpeed}");
+        }
     }
 }
