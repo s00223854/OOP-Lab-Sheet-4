@@ -17,5 +17,10 @@ namespace Ex4
             total += price;
             items++;
         }
+
+        public void displayinfo()
+        {
+            Console.WriteLine($"Cash registor ")
+        }
     }
 }
