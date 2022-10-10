@@ -10,6 +10,13 @@ namespace Ex4
     {
         static void Main(string[] args)
         {
+            CashRegister reg1 = new CashRegister();
+            reg1.total = 0;
+            reg1.items = 0;
+
+            CashRegister reg2 = new CashRegister();
+            reg2.total = 0;
+            reg2.items = 0;
         }
     }
 }
