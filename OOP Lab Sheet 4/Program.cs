@@ -12,4 +12,9 @@ namespace OOP_Lab_Sheet_4
         {
         }
     }
+    class Car
+    {
+
+
+    }
 }
