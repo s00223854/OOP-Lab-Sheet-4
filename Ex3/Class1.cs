@@ -31,5 +31,25 @@ namespace Ex3
             get { return this.balance; }
             set { this.balance = value; }
         }
+
+        public void deposit(double amount)
+        {
+            Balance += amount;
+        }
+
+        public void withdraw(double amount)
+        {
+            if (Balance >= amount)
+            {
+                Balance -= amount;
+            }
+        }
+
+        public void displayinfo()
+        {
+            Console.WriteLine($"Account Number: {accountNumber}");
+            Console.WriteLine($"Account Holder: {accountHolder}");
+            Console.WriteLine($"Balance: {balance}");
+        }
     }
 }
