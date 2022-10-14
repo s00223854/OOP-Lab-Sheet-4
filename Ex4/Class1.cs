@@ -8,19 +8,14 @@ namespace Ex4
 {
     internal class CashRegister
     {
-        public decimal total { get; set; }
+        public double total { get; private set; }
 
-        public int items { get; set; }
+        public int items { get; private set; }
 
-        public void AddItem(decimal price)
+        public void AddItem(double price)
         {
             total += price;
             items++;
-        }
-
-        public void displayinfo()
-        {
-            Console.WriteLine($"Cash registor ")
         }
     }
 }
