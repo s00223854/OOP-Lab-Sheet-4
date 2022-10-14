@@ -8,6 +8,9 @@ namespace Ex4
 {
     internal class CashRegister
     {
+        public static double totalAllMoneyRegs { get; set; }
+
+        public static int totalAllItemsRegs { get; set; }
         public double total { get; set; }
 
         public int items { get; set; }
@@ -16,6 +19,9 @@ namespace Ex4
         {
             total += price;
             items++;
+
+            totalAllMoneyRegs += price;
+            totalAllItemsRegs++;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Ex4
 
             CashRegister reg2 = new CashRegister();
             reg2.total = 0;
-            reg2.items = 0;
+            reg2.items= 0;
 
             Console.WriteLine("Adding item worth 3.40 to cash registor 1");
             Console.WriteLine("Adding item worth 9.56 to cash registor 1");
